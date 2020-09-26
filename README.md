@@ -1,6 +1,6 @@
 # Population_Coding_Thesis
 This repository contains the code for implementing population coding on certain datasets from the
-[PMLP repository](https://github.com/EpistasisLab/penn-ml-benchmarks/) and then passing the transformed data to an MLPRegressor from [scikit learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
+[PMLB repository](https://github.com/EpistasisLab/penn-ml-benchmarks/) and then passing the transformed data to an MLPRegressor from [scikit learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
 The preferred way of running the code is through Google Colab as this was used to obtain the results. To have the same settings that were used throughout this paper, the TPU should be enabled. From the menu bar, click on edit→Notebook settings→select TPU for the Hardware accelerator.
 ## Running the Code:
 ``` python
@@ -61,4 +61,4 @@ NUM_GAUSSIAN_CENTRES_X = 7
 NUM_GAUSSIAN_CENTRES_Y = 10
 ```
 The final parameter is the number of Gaussian centres to use if either form of population coding is active. ‘NUM GAUSSIAN CENTRES X’ represents the number of centres for input coding and ‘NUM GAUSSIAN CENTRES Y’ for output coding. If either form is not active, then their corresponding centres would not be considered in obtaining the results. After selecting the number of centres, the cell can start running (click the play button).  
-**This code is affected by the [PMLP repository](https://github.com/EpistasisLab/penn-ml-benchmarks/), as any changes in the structure of the datasets there could break the code.**
+**This code is affected by the [PMLB repository](https://github.com/EpistasisLab/penn-ml-benchmarks/), as any changes in the structure of the datasets there could break the code.**
